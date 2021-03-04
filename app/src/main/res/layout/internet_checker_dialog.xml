@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/notification_bg"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_erasbd"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:textStyle="bold"
+                android:text="No Internet Connection"
+                android:textSize="22sp"
+                android:textColor="@color/notification_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You need to have mobile data or wifi to use this application. Press cross to Exit"
+                android:gravity="center"
+                android:textColor="@color/notification_bg"
+                android:fontFamily="@font/font_erasbd"
+                android:textSize="17sp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:layout_weight="0.01"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivWifi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_wifi" />
+
+            <ImageView
+                android:id="@+id/ivMobileData"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:rotation="270"
+                android:src="@drawable/ic_mobile_data" />
+
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

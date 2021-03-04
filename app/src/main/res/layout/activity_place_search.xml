@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceSearchActivity">
+
+    <fragment
+        android:id="@+id/place_location_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_gravity="center"
+        android:fontFamily="@font/font_nirmala"
+        android:hint="@string/txt_slider_text_hint"
+        android:textAlignment="center"
+        android:background="@drawable/city_name_bg_shape"
+        android:paddingTop="10dp"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawableTint="@color/colorButton"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorBlack" />
+
+</RelativeLayout>

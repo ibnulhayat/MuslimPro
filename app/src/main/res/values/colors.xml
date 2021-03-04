@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#008577</color>
+    <color name="colorTransparent">#cccccc</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorButton">#20384B</color>
+    <color name="colorDuaButtonDown">#CDCDCD</color>
+    <color name="colorDuaButtonUp">#F4F4F4</color>
+    <color name="colorTopBar">#537083</color>
+    <color name="colorEnd">#C3C3C3</color>
+    <color name="colorStart">#F7F7F7</color>
+    <color name="colorCenter">#F7F7F7</color>
+    <color name="top_bar_color">#537083</color>
+    <color name="sample_primary">#4590bd</color>
+    <color name="sample_accent">#88bfcb</color>
+    <color name="tabColor">#537083</color>
+    <color name="searchBar">#CCCCCC</color>
+    <color name="colorGreen">#009245</color>
+    <color name="ramadanCardColor">#A3B2BB</color>
+    <color name="notification_bg">#215D91</color>
+</resources>

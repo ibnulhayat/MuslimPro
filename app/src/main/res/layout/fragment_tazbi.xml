@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homePageFragments.TazbiFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tazbi_frame">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:id="@+id/header"
+                   android:background="@drawable/image_asr">
+                   <android.support.v4.view.ViewPager
+                       android:id="@+id/viewPager"
+                       android:background="#83FFFFFF"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       />
+
+                   <android.support.design.widget.TabLayout
+                       android:id="@+id/indicator"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="true"
+                       android:layout_centerHorizontal="true"
+                       app:tabBackground="@drawable/indicator_selector"
+                       app:tabGravity="center"
+                       app:tabIndicatorHeight="0dp" />
+               </RelativeLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:id="@+id/btn_layout"
+                   android:layout_centerHorizontal="true"
+                   android:layout_below="@id/header"
+                   android:layout_marginTop="15dp">
+                   <Button
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:text="R"
+                       android:layout_margin="5dp"
+                       android:background="@drawable/tazbi_icon2"
+                       android:id="@+id/btn_tazbi_reset" />
+                   <Button
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:text="99"
+                       android:layout_margin="5dp"
+                       android:background="@drawable/btn_tazbi_bg"
+                       android:id="@+id/btn_tazbi_33_99" />
+                   <Button
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:text="S"
+                       android:layout_margin="5dp"
+                       android:background="@drawable/tazbi_icon3"
+                       android:id="@+id/btn_tazbi_save_file" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:id="@+id/txt_layout"
+                   android:layout_centerHorizontal="true"
+                   android:layout_below="@id/btn_layout"
+                   android:layout_marginTop="15dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=""
+                       android:textStyle="bold"
+                       android:fontFamily="@font/font_nirmala"
+                       android:textSize="55sp"
+                       android:id="@+id/txt_tazbi_count" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="/"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/font_nirmala"
+                       android:textSize="30sp"
+                       android:layout_marginLeft="10dp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=""
+                       android:textStyle="bold"
+                       android:fontFamily="@font/font_nirmala"
+                       android:textSize="30sp"
+                       android:id="@+id/txt_tazbi_max" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=""
+                       android:textStyle="bold"
+                       android:fontFamily="@font/font_nirmala"
+                       android:textSize="12sp"
+                       android:id="@+id/txt_tazbi_repeat" />
+               </LinearLayout>
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/img_tazbi"
+                   android:layout_below="@id/txt_layout"
+                   android:src="@drawable/tazbi_1" />
+           </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

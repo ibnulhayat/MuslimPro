@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutSuraList"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/font_nirmala"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvEnglishName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Sura-Name"
+                android:textSize="14sp"
+                android:fontFamily="@font/font_nirmala"
+                android:textColor="@color/colorGreen"/>
+
+            <TextView
+                android:id="@+id/tvMeaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Meaning(7)"
+                android:fontFamily="@font/font_nirmala"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvArabicName"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center|start"
+            android:layout_marginRight="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="match_parent"
+            android:text="سورة الفاتحة"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/searchBar"/>
+</LinearLayout>

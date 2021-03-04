@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_tazbi"
+        android:icon="@drawable/tazbi"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_quran"
+        android:icon="@drawable/quran"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/nav_prayer"
+        android:icon="@drawable/prayer"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/nav_hajj_umrah"
+        android:icon="@drawable/hajj_umrah"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/nav_makka_live"
+        android:icon="@drawable/makka_live"
+        android:title=""
+        app:showAsAction="always"/>
+
+</menu>

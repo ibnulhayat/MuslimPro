@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Islamic New year"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_nirmala"
+        android:layout_margin="5dp"
+        android:id="@+id/txt_holiday_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Muharrom 1440"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/font_nirmala"
+        android:layout_below="@id/txt_holiday_name"
+        android:id="@+id/txt_holiday_date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 Sep, 2019"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/font_nirmala"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/txt_holiday_eng_date"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sample_primary"
+        android:layout_below="@id/txt_holiday_date"/>
+
+</RelativeLayout>

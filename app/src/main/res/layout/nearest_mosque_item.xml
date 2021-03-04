@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+    android:layout_below="@id/header"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:padding="5dp"
+        android:background="@drawable/layout_bg"
+        android:baselineAligned="false"
+        android:layout_below="@id/header"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_mosque"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:fontFamily="@font/font_nirmala"
+            android:text="Neareast Mosque"
+            android:id="@+id/txt_nearest_mosque_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="@font/font_nirmala"
+            android:text="Distance"
+            android:id="@+id/txt_nearest_mosque_distance"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
